@@ -7,13 +7,9 @@ if(!defined('ROOT_PATH')) exit('This file could not be access directly.');
 * Time: 下午11:52
 */
 ?>
-<!-- Left side column. contains the logo and sidebar -->
+
 <aside class="main-sidebar">
-
-<!-- sidebar: style can be found in sidebar.less -->
 <section class="sidebar">
-
-<!-- Sidebar user panel (optional) -->
 <div class="user-panel">
 <div class="pull-left image">
 <img src="<?php echo RESOURCE; ?>/adminLTE/img/user2-160x160.jpg" class="img-circle" alt="User Image">
@@ -47,6 +43,11 @@ if(!defined('ROOT_PATH')) exit('This file could not be access directly.');
 <li class="header">财务</li>
 <li><a href="pay"><i class="fa fa-link"></i> <span>账户充值</span></a></li>
 <li><a href="change"><i class="fa fa-link"></i> <span>套餐变更</span></a></li>
+
+<li class="header">其他</li>
+<li><a href="setting"><i class="fa fa-link"></i> <span>账户设置</span></a></li>
+<li><a href="ticket"><i class="fa fa-link"></i> <span>工单</span></a></li>
+
 </ul>
 <!-- /.sidebar-menu -->
 </section>

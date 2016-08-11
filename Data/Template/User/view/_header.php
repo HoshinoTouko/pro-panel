@@ -53,9 +53,9 @@ apply the skin class to the body tag so the changes take effect.
 <!-- Logo -->
 <a href="glance" class="logo">
 <!-- mini logo for sidebar mini 50x50 pixels -->
-<span class="logo-mini"><b>insky</b>pro</span>
+<span class="logo-mini"><i class="fa fa-plane"></i> <b>insky</b>pro</span>
 <!-- logo for regular state and mobile devices -->
-<span class="logo-lg"><b>insky</b>.Pro</span>
+<span class="logo-lg"><i class="fa fa-plane"></i> <b>insky</b>.Pro</span>
 </a>
 
 <!-- Header Navbar -->
@@ -67,41 +67,6 @@ apply the skin class to the body tag so the changes take effect.
 <!-- Navbar Right Menu -->
 <div class="navbar-custom-menu">
 <ul class="nav navbar-nav">
-<!-- Messages: style can be found in dropdown.less-->
-<li class="dropdown messages-menu">
-<!-- Menu toggle button -->
-<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-<i class="fa fa-envelope-o"></i>
-<span class="label label-success">4</span>
-</a>
-<ul class="dropdown-menu">
-<li class="header">You have 4 messages</li>
-<li>
-<!-- inner menu: contains the messages -->
-<ul class="menu">
-<li><!-- start message -->
-<a href="#">
-<div class="pull-left">
-<!-- User Image -->
-<img src="<?php echo RESOURCE; ?>/adminLTE/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-</div>
-<!-- Message title and timestamp -->
-<h4>
-Support Team
-<small><i class="fa fa-clock-o"></i> 5 mins</small>
-</h4>
-<!-- The message -->
-<p>Why not buy a new awesome theme?</p>
-</a>
-</li>
-<!-- end message -->
-</ul>
-<!-- /.menu -->
-</li>
-<li class="footer"><a href="#">See All Messages</a></li>
-</ul>
-</li>
-<!-- /.messages-menu -->
 
 <!-- Notifications Menu -->
 <li class="dropdown notifications-menu">
@@ -136,6 +101,7 @@ Support Team
 <!-- hidden-xs hides the username on small devices so only the image appears. -->
 <span class="hidden-xs">Alexander Pierce</span>
 </a>
+
 <ul class="dropdown-menu">
 <!-- The user image in the menu -->
 <li class="user-header">
@@ -173,8 +139,9 @@ Alexander Pierce - Web Developer
 </ul>
 </li>
 <!-- Control Sidebar Toggle Button -->
+
 <li>
-<a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+<a href="setting"><i class="fa fa-gears"></i></a>
 </li>
 </ul>
 </div>

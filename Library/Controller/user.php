@@ -48,4 +48,31 @@ class user{
         Template::putContext('title', '账户充值');
     }
 
+    /**
+     * @Route /user/change
+     */
+    function change()
+    {
+        Template::setView('User/change');
+        Template::putContext('title', '套餐更换');
+    }
+
+    /**
+     * @Route /user/setting
+     */
+    function setting()
+    {
+        Template::setView('User/setting');
+        Template::putContext('title', '账户设置');
+    }
+
+    /**
+     * @Route /user/change
+     */
+    function ticket()
+    {
+        Template::setView('User/ticket');
+        Template::putContext('title', '提交工单');
+    }
+
 }
