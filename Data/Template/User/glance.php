@@ -30,7 +30,7 @@ include \Core\Template::load('User/view/_sidebar'); ?>
 <div class="small-box bg-blue">
 <div class="inner">
 <h3>
-50
+<?php echo $transferLeft; ?>
 <small class="text-white">%</small>
 </h3>
 
@@ -50,7 +50,7 @@ More info <i class="fa fa-arrow-circle-right"></i>
 <div class="small-box bg-red">
 <div class="inner">
 <h3>
-30
+<?php echo $daysLeft; ?>
 <small class="text-white">天</small>
 </h3>
 <p>剩余天数</p>
@@ -69,13 +69,13 @@ More info <i class="fa fa-arrow-circle-right"></i>
 <div class="small-box bg-orange">
 <div class="inner">
 <h3>
-Coffee
+<?php echo $planName; ?>
 <small class="text-white"></small>
 </h3>
 <p>套餐类型</p>
 </div>
 <div class="icon">
-<i class="fa fa-calendar"></i>
+<i class="fa fa-paper-plane"></i>
 </div>
 <a href="#" class="small-box-footer">
 More info <i class="fa fa-arrow-circle-right"></i>
@@ -88,7 +88,7 @@ More info <i class="fa fa-arrow-circle-right"></i>
 <div class="small-box bg-green">
 <div class="inner">
 <h3>
-30
+<?php echo $currencyLeft; ?>
 <small class="text-white">$</small>
 </h3>
 <p>剩余货币</p>

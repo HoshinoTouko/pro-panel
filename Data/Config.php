@@ -11,7 +11,7 @@ if (!defined('ROOT_PATH')) {
 /**
  * Site Name
  */
-define('SITE_NAME', 'KK Framework Demo Site');
+define('SITE_NAME', 'insky-dev');
 
 /**
  * Rewrite setting:
@@ -24,7 +24,7 @@ define('USE_REWRITE', true);
  * This key is used to encrypt password and other information.
  * Don't touch it after application install finished.
  */
-define('ENCRYPT_KEY', 'Please generate key and paste here');
+define('ENCRYPT_KEY', 'Pds35fdGsdf446dsdfAds5xdD');
 
 /**
  * HTTPS support:
@@ -43,7 +43,7 @@ define('DEBUG_ENABLE', true);
  * This option will disable i18n / router / template cache, development only.
  * DO NOT TURN ON THIS OPTION IN PRODUCTION!!!
  */
-define('REAL_TIME_MODE', false);
+define('REAL_TIME_MODE', true);
 
 /**
  * Base URL:
@@ -66,3 +66,4 @@ Core\Database::initialize('mysql:dbname=insky;host=localhost;charset=UTF8', 'ins
 
 
 define('RESOURCE', '/Resource');
+
