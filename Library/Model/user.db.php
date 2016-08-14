@@ -28,4 +28,14 @@ class db_user{
         $statement->execute();
         return $statement->fetchObject(__CLASS__);
     }
+    function getAllPlanInfo(){
+        $statement = db::getInstance()->prepare('SELECT * FROM `plan` WHERE visible = ?');
+        $statement->bindValue(1, '1');
+        $statement->execute();
+        $result = [];
+        while( $row = $statement->fetchObject(__CLASS__) ){
+            array_push($result, $row);
+        }
+        return $result;
+    }
 }

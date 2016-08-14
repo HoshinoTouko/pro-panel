@@ -34,11 +34,11 @@
         </div>
         <div class="row col-sm-12 col-md-6 invoice-info">
             <div class="col-sm-4 invoice-col">
-                端口: <b>8338</b>
+                端口: <b>$port</b>
             </div>
             <!-- /.col -->
             <div class="col-sm-8 invoice-col">
-                连接密码: <b>123456216545541465464983456789</b>
+                连接密码: <b>$passwd</b>
             </div>
             <!-- /.col -->
         </div>
@@ -74,7 +74,7 @@
                     <span class="info-box-icon bg-brown"><i class="fa fa-tag"></i></span>
                     <div class="info-box-content">
                         <span class="info-box-text">套餐</span>
-                        <span class="info-box-number">Coffee</span>
+                        <span class="info-box-number">$planName</span>
                     </div>
                 </div>
             </div>
@@ -84,12 +84,12 @@
                     <span class="info-box-icon bg-aqua"><i class="fa fa-bookmark-o"></i></span>
                     <div class="info-box-content">
                         <span class="info-box-text">剩余流量</span>
-                        <span class="info-box-number">50%</span>
+                        <span class="info-box-number">$transferLeftPercent %</span>
                         <div class="progress">
-                            <div class="progress-bar bg-aqua" style="width: 50%"></div>
+                            <div class="progress-bar bg-aqua" style="width: $transferLeftPercentage%"></div>
                         </div>
                         <span class="progress-description">
-                            5 GB / 10 GB
+                            $transferUsed GB / $totalTransfer GB
                         </span>
                     </div>
                 </div>
@@ -99,13 +99,13 @@
                 <div class="info-box">
                     <span class="info-box-icon bg-green"><i class="fa fa-bookmark-o"></i></span>
                     <div class="info-box-content">
-                        <span class="info-box-text">剩余天数</span>
-                        <span class="info-box-number">50%</span>
+                        <span class="info-box-text">剩余时长</span>
+                        <span class="info-box-number">$daysLeftPercent%</span>
                         <div class="progress">
-                            <div class="progress-bar bg-green" style="width: 100%"></div>
+                            <div class="progress-bar bg-green" style="width: $daysLeftPercent%"></div>
                         </div>
                         <span class="progress-description">
-                            50 天
+                            $daysLeft 天
                         </span>
                     </div>
                 </div>
@@ -154,6 +154,7 @@
                             <tbody><tr>
                                 <th>名称</th>
                                 <th>地址</th>
+                                <th>加密</th>
                                 <th>倍率</th>
                                 <th>状态</th>
                                 <th>介绍</th>
@@ -183,6 +184,7 @@
                             <tbody><tr>
                                 <th>名称</th>
                                 <th>地址</th>
+                                <th>加密</th>
                                 <th>倍率</th>
                                 <th>状态</th>
                                 <th>介绍</th>

@@ -33,11 +33,11 @@ include \Core\Template::load('User/view/_sidebar'); ?>
 </div>
 <div class="row col-sm-12 col-md-6 invoice-info">
 <div class="col-sm-4 invoice-col">
-端口: <b>8338</b>
+端口: <b><?php echo $port; ?></b>
 </div>
 <!-- /.col -->
 <div class="col-sm-8 invoice-col">
-连接密码: <b>123456216545541465464983456789</b>
+连接密码: <b><?php echo $passwd; ?></b>
 </div>
 <!-- /.col -->
 </div>
@@ -73,7 +73,7 @@ include \Core\Template::load('User/view/_sidebar'); ?>
 <span class="info-box-icon bg-brown"><i class="fa fa-tag"></i></span>
 <div class="info-box-content">
 <span class="info-box-text">套餐</span>
-<span class="info-box-number">Coffee</span>
+<span class="info-box-number"><?php echo $planName; ?></span>
 </div>
 </div>
 </div>
@@ -83,12 +83,12 @@ include \Core\Template::load('User/view/_sidebar'); ?>
 <span class="info-box-icon bg-aqua"><i class="fa fa-bookmark-o"></i></span>
 <div class="info-box-content">
 <span class="info-box-text">剩余流量</span>
-<span class="info-box-number">50%</span>
+<span class="info-box-number"><?php echo $transferLeftPercent; ?> %</span>
 <div class="progress">
-<div class="progress-bar bg-aqua" style="width: 50%"></div>
+<div class="progress-bar bg-aqua" style="width: <?php echo $transferLeftPercentage; ?>%"></div>
 </div>
 <span class="progress-description">
-5 GB / 10 GB
+<?php echo $transferUsed; ?> GB / <?php echo $totalTransfer; ?> GB
 </span>
 </div>
 </div>
@@ -98,13 +98,13 @@ include \Core\Template::load('User/view/_sidebar'); ?>
 <div class="info-box">
 <span class="info-box-icon bg-green"><i class="fa fa-bookmark-o"></i></span>
 <div class="info-box-content">
-<span class="info-box-text">剩余天数</span>
-<span class="info-box-number">50%</span>
+<span class="info-box-text">剩余时长</span>
+<span class="info-box-number"><?php echo $daysLeftPercent; ?>%</span>
 <div class="progress">
-<div class="progress-bar bg-green" style="width: 100%"></div>
+<div class="progress-bar bg-green" style="width: <?php echo $daysLeftPercent; ?>%"></div>
 </div>
 <span class="progress-description">
-50 天
+<?php echo $daysLeft; ?> 天
 </span>
 </div>
 </div>
@@ -153,6 +153,7 @@ include \Core\Template::load('User/view/_sidebar'); ?>
 <tbody><tr>
 <th>名称</th>
 <th>地址</th>
+<th>加密</th>
 <th>倍率</th>
 <th>状态</th>
 <th>介绍</th>
@@ -182,6 +183,7 @@ include \Core\Template::load('User/view/_sidebar'); ?>
 <tbody><tr>
 <th>名称</th>
 <th>地址</th>
+<th>加密</th>
 <th>倍率</th>
 <th>状态</th>
 <th>介绍</th>

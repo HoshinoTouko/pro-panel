@@ -39,7 +39,7 @@ include \Core\Template::load('User/view/_sidebar'); ?>
 <div class="icon">
 <i class="ion ion-pie-graph"></i>
 </div>
-<a href="node" class="small-box-footer">
+<a href="usage" class="small-box-footer">
 More info <i class="fa fa-arrow-circle-right"></i>
 </a>
 </div>
@@ -58,7 +58,7 @@ More info <i class="fa fa-arrow-circle-right"></i>
 <div class="icon">
 <i class="fa fa-calendar"></i>
 </div>
-<a href="#" class="small-box-footer">
+<a href="usage" class="small-box-footer">
 More info <i class="fa fa-arrow-circle-right"></i>
 </a>
 </div>
@@ -77,7 +77,7 @@ More info <i class="fa fa-arrow-circle-right"></i>
 <div class="icon">
 <i class="fa fa-paper-plane"></i>
 </div>
-<a href="#" class="small-box-footer">
+<a href="change" class="small-box-footer">
 More info <i class="fa fa-arrow-circle-right"></i>
 </a>
 </div>
@@ -96,7 +96,7 @@ More info <i class="fa fa-arrow-circle-right"></i>
 <div class="icon">
 <i class="fa fa-shopping-cart"></i>
 </div>
-<a href="#" class="small-box-footer">
+<a href="pay" class="small-box-footer">
 More info <i class="fa fa-arrow-circle-right"></i>
 </a>
 </div>

@@ -41,8 +41,8 @@ if(!defined('ROOT_PATH')) exit('This file could not be access directly.');
 <li><a href="usage"><i class="fa fa-link"></i> <span>节点信息</span></a></li>
 
 <li class="header">财务</li>
-<li><a href="pay"><i class="fa fa-link"></i> <span>账户充值</span></a></li>
 <li><a href="change"><i class="fa fa-link"></i> <span>套餐变更</span></a></li>
+<li><a href="pay"><i class="fa fa-link"></i> <span>账户充值</span></a></li>
 
 <li class="header">其他</li>
 <li><a href="setting"><i class="fa fa-link"></i> <span>账户设置</span></a></li>

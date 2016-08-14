@@ -24,17 +24,19 @@ include \Core\Template::load('User/view/_sidebar'); ?>
 <section id="contacts" class="content">
 <div class="row">
 
-<div class="col-sm-12 col-md-4 ">
+<?php  $planNum = 0;  while ( isset($planData[$planNum]) ) {  ?>
+<div class="col-sm-12 col-md-4">
 <div class="box box-default">
 <div class="box-header with-border">
-<h2 class="box-title">Coffee</h2>
+<h2 class="box-title"><?php echo $planData[$planNum]->name ?></h2>
 </div>
 <div class="box-body">
 <div class="col-xs-12">
-<p>40G / 月</p>
-<p>多地服务器</p>
-<p>带宽上限100Mbps</p>
-<p>仅需 <b style="font-size: larger">￥9.00</b></p>
+<?php echo $planData[$planNum]->describtion ?>
+<p>
+仅需
+<b style="font-size: larger"> ￥<?php echo $planData[$planNum]->price ?></b>
+</p>
 </div>
 </div>
 <div class="box-footer no-padding">
@@ -47,52 +49,7 @@ include \Core\Template::load('User/view/_sidebar'); ?>
 </div>
 </div>
 
-<div class="col-sm-12 col-md-4 ">
-<div class="box box-default">
-<div class="box-header with-border">
-<h2 class="box-title">Coffee</h2>
-</div>
-<div class="box-body">
-<div class="col-xs-12">
-<p>40G / 月</p>
-<p>多地服务器</p>
-<p>带宽上限100Mbps</p>
-<p>仅需 <b style="font-size: larger">￥9.00</b></p>
-</div>
-</div>
-<div class="box-footer no-padding">
-<ul class="nav nav-pills nav-stacked">
-<li>
-<a href="#">选择</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-
-<div class="col-sm-12 col-md-4 ">
-<div class="box box-default">
-<div class="box-header with-border">
-<h2 class="box-title">Coffee</h2>
-</div>
-<div class="box-body">
-<div class="col-xs-12">
-<p>40G / 月</p>
-<p>多地服务器</p>
-<p>带宽上限100Mbps</p>
-<p>仅需 <b style="font-size: larger">￥9.00</b></p>
-</div>
-</div>
-<div class="box-footer no-padding">
-<ul class="nav nav-pills nav-stacked">
-<li>
-<a href="#">选择</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-
+<?php $planNum++; } ?>
 
 </div>
 </section>
