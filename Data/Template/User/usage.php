@@ -225,7 +225,7 @@ $planNum++; } ?>
 <th>地址</th>
 <th>加密</th>
 <th>混淆</th>
-<th>状态</th>
+<th>倍率</th>
 <th>详情</th>
 </tr>
 

@@ -34,7 +34,6 @@ immediately after the control sidebar -->
 <!-- AdminLTE App -->
 <script src="<?php echo RESOURCE; ?>/adminLTE/js/app.min.js"></script>
 
-
 <?php 
 if ( isset( $extraJs ) )
 echo $extraJs;
