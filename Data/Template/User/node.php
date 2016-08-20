@@ -33,7 +33,7 @@ include \Core\Template::load('User/view/_sidebar'); ?>
 <div class="col-sm-12 col-md-6">
 <p style="font-size: larger">
 地址:
-<?php echo $nodeInfo->host; ?>
+<?php echo $host; ?>
 </p>
 <p style="font-size: larger">
 端口:
@@ -50,13 +50,13 @@ include \Core\Template::load('User/view/_sidebar'); ?>
 <p style="font-size: larger">
 加密方式:
 <b>
-<?php echo $nodeInfo->method; ?>
+<?php echo $method; ?>
 </b>
 </p>
 <p style="font-size: larger">
 混淆协议:
 <b>
-<?php echo $nodeInfo->ssr_method; ?>
+<?php echo $ssrMethod; ?>
 </b>
 </p>
 </div>
@@ -64,7 +64,7 @@ include \Core\Template::load('User/view/_sidebar'); ?>
 <div class="col-sm-12 col-md-6">
 <div class="col-sm-12">
 <p style="font-size: larger">
-<?php echo $nodeInfo->info; ?>
+<?php echo $intro; ?>
 </p>
 </div>
 <div class="col-sm-12">

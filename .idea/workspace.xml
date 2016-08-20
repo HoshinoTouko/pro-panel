@@ -62,16 +62,16 @@
       <file leaf-file-name="user.db.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Library/Model/user.db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+            <state relative-caret-position="405">
+              <caret line="51" column="79" selection-start-line="51" selection-start-column="79" selection-end-line="51" selection-end-column="79" />
               <folding>
                 <element signature="e#6#85#0#PHP" expanded="true" />
-                <marker date="1471258602617" expanded="true" signature="232:266" ph="SELECT * FRO... user" />
-                <marker date="1471258602617" expanded="true" signature="481:520" ph="SELECT * FRO... user_info" />
-                <marker date="1471258602617" expanded="true" signature="735:769" ph="SELECT * FRO... plan" />
-                <marker date="1471258602617" expanded="true" signature="987:1025" ph="SELECT * FRO... plan" />
-                <marker date="1471258602617" expanded="true" signature="1353:1390" ph="SELECT * FRO... node" />
-                <marker date="1471258602617" expanded="true" signature="1714:1751" ph="SELECT * FRO... node" />
+                <marker date="1471678346217" expanded="true" signature="232:266" ph="SELECT * FRO... user" />
+                <marker date="1471678346217" expanded="true" signature="481:520" ph="SELECT * FRO... user_info" />
+                <marker date="1471678346217" expanded="true" signature="735:769" ph="SELECT * FRO... plan" />
+                <marker date="1471678346217" expanded="true" signature="987:1025" ph="SELECT * FRO... plan" />
+                <marker date="1471678346217" expanded="true" signature="1353:1390" ph="SELECT * FRO... node" />
+                <marker date="1471678346217" expanded="true" signature="1714:1748" ph="SELECT * FRO... node" />
               </folding>
             </state>
           </provider>
@@ -80,22 +80,32 @@
       <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Library/Controller/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="199" column="4" selection-start-line="199" selection-start-column="4" selection-end-line="199" selection-end-column="4" />
+            <state relative-caret-position="254">
+              <caret line="161" column="30" selection-start-line="161" selection-start-column="30" selection-end-line="161" selection-end-column="30" />
               <folding>
                 <element signature="e#6#86#0#PHP" expanded="true" />
-                <marker date="1471677259341" expanded="true" signature="6585:6757" ph="..." />
-                <marker date="1471677259341" expanded="true" signature="6619:6745" ph="{...}" />
+                <marker date="1471678935381" expanded="true" signature="5810:5982" ph="..." />
+                <marker date="1471678935381" expanded="true" signature="5844:5970" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="node.htm" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_sidebar.htm" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Template/User/view/_sidebar.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="node.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Template/User/node.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="93" column="23" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
+            <state relative-caret-position="539">
+              <caret line="67" column="46" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
@@ -112,7 +122,7 @@
       <file leaf-file-name="usage.htm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Template/User/usage.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="540">
               <caret line="228" column="43" selection-start-line="228" selection-start-column="43" selection-end-line="228" selection-end-column="43" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#2;n#div#0;n#!!top" expanded="true" />
@@ -146,16 +156,16 @@
         <option value="$PROJECT_DIR$/Public/index.php" />
         <option value="$PROJECT_DIR$/Template/User/setting.htm" />
         <option value="$PROJECT_DIR$/Template/User/view/_header.htm" />
-        <option value="$PROJECT_DIR$/Template/User/view/_sidebar.htm" />
         <option value="$PROJECT_DIR$/Template/User/glance.htm" />
         <option value="$PROJECT_DIR$/Template/User/change.htm" />
-        <option value="$PROJECT_DIR$/Library/Model/user.db.php" />
         <option value="$PROJECT_DIR$/Template/User/usage.htm" />
-        <option value="$PROJECT_DIR$/Template/User/node.htm" />
         <option value="$PROJECT_DIR$/Library/Core/Template.php" />
-        <option value="$PROJECT_DIR$/Library/Controller/user.php" />
         <option value="$PROJECT_DIR$/Template/User/view/_footer.htm" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/Library/Model/user.db.php" />
+        <option value="$PROJECT_DIR$/Template/User/node.htm" />
+        <option value="$PROJECT_DIR$/Library/Controller/user.php" />
+        <option value="$PROJECT_DIR$/Template/User/view/_sidebar.htm" />
       </list>
     </option>
   </component>
@@ -454,18 +464,18 @@
       <workItem from="1470834244149" duration="11504000" />
       <workItem from="1470911703344" duration="33667000" />
       <workItem from="1471622586760" duration="220000" />
-      <workItem from="1471623063134" duration="2851000" />
+      <workItem from="1471623063134" duration="4345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48242000" />
+    <option name="totallyTimeSpent" value="49736000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="31" width="1360" height="688" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -514,8 +524,8 @@
           <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
-            <marker date="1471677259341" expanded="true" signature="6585:6757" ph="..." />
-            <marker date="1471677259341" expanded="true" signature="6619:6745" ph="{...}" />
+            <marker date="1471678935381" expanded="true" signature="5810:5982" ph="..." />
+            <marker date="1471678935381" expanded="true" signature="5844:5970" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -747,13 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Template/User/view/_sidebar.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="42" column="86" selection-start-line="42" selection-start-column="86" selection-end-line="42" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Template/Misc/Redirect.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -782,46 +785,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Template/User/view/_header.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="100" column="63" selection-start-line="100" selection-start-column="63" selection-end-line="100" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Library/Model/user.db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
-          <folding>
-            <element signature="e#6#85#0#PHP" expanded="true" />
-            <marker date="1471258602617" expanded="true" signature="232:266" ph="SELECT * FRO... user" />
-            <marker date="1471258602617" expanded="true" signature="481:520" ph="SELECT * FRO... user_info" />
-            <marker date="1471258602617" expanded="true" signature="735:769" ph="SELECT * FRO... plan" />
-            <marker date="1471258602617" expanded="true" signature="987:1025" ph="SELECT * FRO... plan" />
-            <marker date="1471258602617" expanded="true" signature="1353:1390" ph="SELECT * FRO... node" />
-            <marker date="1471258602617" expanded="true" signature="1714:1751" ph="SELECT * FRO... node" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Library/Core/Template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="82" column="6" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Library/Controller/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="199" column="4" selection-start-line="199" selection-start-column="4" selection-end-line="199" selection-end-column="4" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-            <marker date="1471677259341" expanded="true" signature="6585:6757" ph="..." />
-            <marker date="1471677259341" expanded="true" signature="6619:6745" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -833,9 +801,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/Model/user.db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="51" column="79" selection-start-line="51" selection-start-column="79" selection-end-line="51" selection-end-column="79" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+            <marker date="1471678346217" expanded="true" signature="232:266" ph="SELECT * FRO... user" />
+            <marker date="1471678346217" expanded="true" signature="481:520" ph="SELECT * FRO... user_info" />
+            <marker date="1471678346217" expanded="true" signature="735:769" ph="SELECT * FRO... plan" />
+            <marker date="1471678346217" expanded="true" signature="987:1025" ph="SELECT * FRO... plan" />
+            <marker date="1471678346217" expanded="true" signature="1353:1390" ph="SELECT * FRO... node" />
+            <marker date="1471678346217" expanded="true" signature="1714:1748" ph="SELECT * FRO... node" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Template/User/view/_header.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="100" column="63" selection-start-line="100" selection-start-column="63" selection-end-line="100" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/Controller/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="161" column="30" selection-start-line="161" selection-start-column="30" selection-end-line="161" selection-end-column="30" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+            <marker date="1471678935381" expanded="true" signature="5810:5982" ph="..." />
+            <marker date="1471678935381" expanded="true" signature="5844:5970" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Template/User/usage.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="540">
           <caret line="228" column="43" selection-start-line="228" selection-start-column="43" selection-end-line="228" selection-end-column="43" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#2;n#div#0;n#!!top" expanded="true" />
@@ -845,18 +857,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Template/User/node.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="93" column="23" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
+        <state relative-caret-position="539">
+          <caret line="67" column="46" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
@@ -866,6 +870,14 @@
             <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Template/User/view/_sidebar.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>

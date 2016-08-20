@@ -144,6 +144,7 @@ class user{
                 break;
         }
     }
+
     /**
      * @DynamicRoute /user/node/{string}
      * @param $nid
@@ -158,52 +159,54 @@ class user{
         );
         $data['plan'] = $db->getPlanInfoById($data['info']->plan );
 
-        // Push user info
-        Template::putContext('port', $data['ss']->port);
-        Template::putContext('passwd', $data['ss']->passwd);
-        Template::putContext('planName', $data['plan']->name);
-        Template::putContext(
-            'transferUsed',
-            sprintf("%.2f", $data['ss']->t / (1024 * 1024 * 1024))
-        );
-        Template::putContext(
-            'totalTransfer',
-            sprintf("%.2f", $data['ss']->transfer_enable / (1024 * 1024 * 1024))
-        );
-        Template::putContext(
-            'transferLeftPercent',
-            sprintf("%.2f", 100 *( 1- $data['ss']->t / $data['ss']->transfer_enable) )
-        );
-        Template::putContext(
-            'transferLeftPercentage',
-            100 *( 1- $data['ss']->t / $data['ss']->transfer_enable)
-        );
-        Template::putContext('daysLeft', $data['info']->days_left);
-        if ($data['info']->days_left >= 30){
-            $daysLeftPercent = 100;
-        }
-        else{
-            $daysLeftPercent = sprintf("%.2f", 100 *( $data['info']->days_left / 31) );
-        }
-        Template::putContext('daysLeftPercent', $daysLeftPercent);
+        Template::putContext('urlAdjust', '../');
 
-        // Page initialization
-        Template::setView('User/node');
-        Template::putContext('title', '节点 ' . $info->name . ' 详细信息');
-        Template::putContext('nodeName', $info->name);
-        Template::putContext('nodeInfo', $info);
-        $extraJs = '
+        if( isset($info->name) ){
+            // User info
+            Template::putContext(
+                'userName',
+                $data['info']->name
+            );
+            Template::putContext(
+                'regDate',
+                $data['info']->reg_date
+            );
+
+            // Push user info
+            Template::putContext('port', $data['ss']->port);
+            Template::putContext('passwd', $data['ss']->passwd);
+            Template::putContext('planName', $data['plan']->name);
+
+            //QRCode initialize (Not finish)
+            $extraJs = '
 <script type="text/javascript">
     $(document).ready(function(){ 
         $("#qrcode1").qrcode("http://www.helloweba.com"); 
         $("#qrcode2").qrcode("http://www.helloweba.com"); 
     }); 
-</script>'
-        ;
-        Template::putContext(
-            'extraJs',
-            $extraJs
-        );
+</script>';
+
+            // Page initialization
+            Template::setView('User/node');
+            Template::putContext('title', '节点 ' . $info->name . ' 详细信息');
+            Template::putContext('nodeName', $info->name);
+            Template::putContext('host', $info->host);
+            Template::putContext('method', $info->method);
+            Template::putContext('ssrMethod', $info->ssr_method);
+            Template::putContext('intro', $info->info);
+            Template::putContext(
+                'extraJs',
+                $extraJs
+            );
+        }
+        else{
+            Template::setView('Misc/Redirect');
+            Template::putContext('text', '错误啦，重定向喵～');
+            Template::putContext('timeout', '3');
+            Template::putContext('link', 'index.php/user/glance');
+        }
+
+
 
     }
     /**

@@ -49,7 +49,7 @@ class db_user{
         return $result;
     }
     function getNodeInfoByNid($nid){
-        $statement = db::getInstance()->prepare('SELECT * FROM `node` WHERE level >= ?');
+        $statement = db::getInstance()->prepare('SELECT * FROM `node` WHERE nid = ?');
         $statement->bindValue(1, $nid);
         $statement->execute();
         return $statement->fetchObject(__CLASS__);

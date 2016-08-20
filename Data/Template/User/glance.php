@@ -30,7 +30,7 @@ include \Core\Template::load('User/view/_sidebar'); ?>
 <div class="small-box bg-blue">
 <div class="inner">
 <h3>
-<?php echo $transferLeft; ?>
+<?php echo $transferLeftPercent; ?>
 <small class="text-white">%</small>
 </h3>
 
