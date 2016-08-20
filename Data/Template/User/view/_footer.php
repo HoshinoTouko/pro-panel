@@ -27,14 +27,19 @@ immediately after the control sidebar -->
 
 <!-- jQuery 2.2.3 -->
 <script src="<?php echo RESOURCE; ?>/adminLTE/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- jQ QRCode -->
+<script src="<?php echo RESOURCE; ?>/insky/js/jquery.qrcode.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
 <script src="<?php echo RESOURCE; ?>/adminLTE/bootstrap/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="<?php echo RESOURCE; ?>/adminLTE/js/app.min.js"></script>
 
-<!-- Optionally, you can add Slimscroll and FastClick plugins.
-Both of these plugins are recommended to enhance the
-user experience. Slimscroll is required when using the
-fixed layout. -->
+
+<?php 
+if ( isset( $extraJs ) )
+echo $extraJs;
+; ?>
+
+
 </body>
 </html>

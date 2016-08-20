@@ -28,14 +28,14 @@ include \Core\Template::load('User/view/_sidebar'); ?>
 <div class="col-sm-12 col-md-4">
 <div class="box box-default">
 <div class="box-header with-border">
-<h2 class="box-title"><?php echo $planData[$planNum]->name ?></h2>
+<h2 class="box-title"><?php echo $planData[$planNum]->name; ?></h2>
 </div>
 <div class="box-body">
 <div class="col-xs-12">
-<?php echo $planData[$planNum]->describtion ?>
+<?php echo $planData[$planNum]->describtion; ?>
 <p>
 仅需
-<b style="font-size: larger"> ￥<?php echo $planData[$planNum]->price ?></b>
+<b style="font-size: larger"> ￥<?php echo $planData[$planNum]->price; ?></b>
 </p>
 </div>
 </div>

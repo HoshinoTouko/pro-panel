@@ -80,7 +80,8 @@ class Template
         self::$context = $context;
     }
 
-    public static function putContext($name, $value, $escapeType = Escape::TEXT_RECURSIVE)
+    //public static function putContext($name, $value, $escapeType = Escape::TEXT_RECURSIVE)
+    public static function putContext($name, $value, $escapeType = Escape::NONE)
     {
         if (!is_array(self::$context)) {
             self::$context = array();
