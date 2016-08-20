@@ -18,7 +18,6 @@
     }
   },
   "require": {
-    "robmorgan/phinx": "^0.5.3",
-    "catfan/Medoo": "^1.1"
+    "robmorgan/phinx": "^0.5.3"
   }
 }
