@@ -23,7 +23,7 @@ class db_user{
         return $statement->fetchObject(__CLASS__);
     }
     function getPlanInfoById($id){
-        $statement = db::getInstance()->prepare('SELECT * FROM `plan` WHERE uid = ?');
+        $statement = db::getInstance()->prepare('SELECT * FROM `plan` WHERE pid = ?');
         $statement->bindValue(1, $id);
         $statement->execute();
         return $statement->fetchObject(__CLASS__);

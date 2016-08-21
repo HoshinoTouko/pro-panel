@@ -54,6 +54,15 @@ return array (
       ),
       'regexp' => '/^user$/i',
     ),
+    3 => 
+    array (
+      'callback' => 
+      array (
+        0 => 'Controller\\userEdit',
+        1 => 'changeConfirm',
+      ),
+      'regexp' => '/^user\\/change\\/(\\w+)$/i',
+    ),
   ),
   'Fallback' => 
   array (

@@ -15,8 +15,8 @@ include \Core\Template::load('User/view/_sidebar'); ?>
 <!-- Content Header (Page header) -->
 <section id="header" class="content-header">
 <h1>
-套餐更换
-<small>Change</small>
+套餐更换确认
+<small>Change confirmation</small>
 </h1>
 </section>
 
@@ -42,7 +42,7 @@ include \Core\Template::load('User/view/_sidebar'); ?>
 <div class="box-footer no-padding">
 <ul class="nav nav-pills nav-stacked">
 <li>
-<a href="change/<?php echo $planData[$planNum]->pid; ?>">选择</a>
+<a href="#">选择</a>
 </li>
 </ul>
 </div>

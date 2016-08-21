@@ -11,7 +11,7 @@ namespace Controller;
 use Core\Template;
 
 //Initialize models
-@include LIBRARY_PATH . 'Model/' . 'user.db.php';
+@require_once LIBRARY_PATH . 'Model/' . 'user.db.php';
 
 
 class user{
@@ -159,26 +159,34 @@ class user{
         );
         $data['plan'] = $db->getPlanInfoById($data['info']->plan );
 
+        // URL adjust
         Template::putContext('urlAdjust', '../');
 
-        if( isset($info->name) ){
-            // User info
-            Template::putContext(
-                'userName',
-                $data['info']->name
-            );
-            Template::putContext(
-                'regDate',
-                $data['info']->reg_date
-            );
+        if( !isset($info->name) ){
+            Template::setView('Misc/Redirect');
+            Template::putContext('text', '错误啦，重定向喵～');
+            Template::putContext('timeout', '3');
+            Template::putContext('link', 'index.php/user/glance');
+            return 0;
+        }
 
-            // Push user info
-            Template::putContext('port', $data['ss']->port);
-            Template::putContext('passwd', $data['ss']->passwd);
-            Template::putContext('planName', $data['plan']->name);
+        // User info
+        Template::putContext(
+            'userName',
+            $data['info']->name
+        );
+        Template::putContext(
+            'regDate',
+            $data['info']->reg_date
+        );
 
-            //QRCode initialize (Not finish)
-            $extraJs = '
+        // Push user info
+        Template::putContext('port', $data['ss']->port);
+        Template::putContext('passwd', $data['ss']->passwd);
+        Template::putContext('planName', $data['plan']->name);
+
+        //QRCode initialize (Not finish)
+        $extraJs = '
 <script type="text/javascript">
     $(document).ready(function(){ 
         $("#qrcode1").qrcode("http://www.helloweba.com"); 
@@ -186,26 +194,18 @@ class user{
     }); 
 </script>';
 
-            // Page initialization
-            Template::setView('User/node');
-            Template::putContext('title', '节点 ' . $info->name . ' 详细信息');
-            Template::putContext('nodeName', $info->name);
-            Template::putContext('host', $info->host);
-            Template::putContext('method', $info->method);
-            Template::putContext('ssrMethod', $info->ssr_method);
-            Template::putContext('intro', $info->info);
-            Template::putContext(
-                'extraJs',
-                $extraJs
-            );
-        }
-        else{
-            Template::setView('Misc/Redirect');
-            Template::putContext('text', '错误啦，重定向喵～');
-            Template::putContext('timeout', '3');
-            Template::putContext('link', 'index.php/user/glance');
-        }
-
+        // Page initialization
+        Template::setView('User/node');
+        Template::putContext('title', '节点 ' . $info->name . ' 详细信息');
+        Template::putContext('nodeName', $info->name);
+        Template::putContext('host', $info->host);
+        Template::putContext('method', $info->method);
+        Template::putContext('ssrMethod', $info->ssr_method);
+        Template::putContext('intro', $info->info);
+        Template::putContext(
+            'extraJs',
+            $extraJs
+        );
 
 
     }
